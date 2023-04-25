@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FightingActivity"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:id="@+id/redSquare"
+        android:layout_width="159dp"
+        android:layout_height="162dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/squarered" />
+
+    <ImageView
+        android:id="@+id/blueSquare"
+        android:layout_width="179dp"
+        android:layout_height="161dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/redSquare"
+        android:layout_marginEnd="52dp"
+        android:src="@drawable/squareblue" />
+
+    <ImageView
+        android:id="@+id/punchRed"
+        android:layout_width="76dp"
+        android:layout_height="82dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/chestRed"
+        android:src="@drawable/punchred" />
+
+    <ImageView
+        android:id="@+id/chestRed"
+        android:layout_width="84dp"
+        android:layout_height="66dp"
+        android:layout_alignTop="@+id/headRed"
+        android:layout_toEndOf="@+id/headRed"
+        android:src="@drawable/chestred" />
+
+    <ImageView
+        android:id="@+id/headRed"
+        android:layout_width="59dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginStart="14dp"
+        android:src="@drawable/headred" />
+
+    <ImageView
+        android:id="@+id/punchBlue"
+        android:layout_width="77dp"
+        android:layout_height="86dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/chestBlue"
+        android:src="@drawable/punchblue" />
+
+    <ImageView
+        android:id="@+id/chestBlue"
+        android:layout_width="64dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginStart="-161dp"
+        android:layout_toEndOf="@+id/headBlue"
+        android:src="@drawable/chestblue" />
+
+    <ImageView
+        android:id="@+id/headBlue"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/chestRed"
+        android:layout_marginEnd="160dp"
+        android:src="@drawable/headblue" />
+
+    <TextView
+        android:id="@+id/counterRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teamRt"
+        android:layout_toStartOf="@+id/punchRed"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="75dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/counterBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/chestBlue"
+        android:layout_alignTop="@+id/counterRed"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="75dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rouge"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/redSquare"
+        android:layout_alignStart="@+id/redSquare"
+        android:layout_marginBottom="-52dp"
+        android:textColor="#2f3542"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bleu"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/redSquare"
+        android:layout_alignStart="@+id/headBlue"
+        android:layout_marginBottom="-52dp"
+        android:textColor="#2f3542"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teamRt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/headRed"
+        android:layout_alignTop="@+id/redSquare"
+        android:textColor="#2f3542"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/teamBt"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/redSquare"
+        android:layout_marginStart="-52dp"
+        android:layout_toEndOf="@+id/blueSquare"
+        android:textColor="#2f3542"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/weightL"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#2f3542"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/teamRt"
+        android:layout_centerHorizontal="true"
+        android:text="2:00"
+        android:textColor="#2f3542"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/startICO"
+        android:layout_width="53dp"
+        android:layout_height="82dp"
+        android:layout_alignTop="@+id/counterRed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-4dp"
+        android:src="@drawable/start" />
+
+    <ImageView
+        android:id="@+id/logoF"
+        android:layout_width="309dp"
+        android:layout_height="155dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/gamejeomR"
+        android:layout_width="41dp"
+        android:layout_height="44dp"
+        android:layout_alignStart="@+id/headRed"
+        android:layout_below="@+id/redSquare"
+        android:src="@drawable/gamejeomred" />
+
+    <ImageView
+        android:id="@+id/gamejeomB"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+        android:layout_alignEnd="@+id/punchBlue"
+        android:layout_below="@+id/redSquare"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/gamejeomblue" />
+
+    <TextView
+        android:id="@+id/gamejeomCounterR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="23dp"
+        android:text="[0]"
+        android:textColor="#2f3542"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/gamejeomCounterB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-52dp"
+        android:layout_toEndOf="@+id/blueSquare"
+        android:text="[0]"
+        android:textColor="#2f3542"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="43dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/rouge"
+        android:src="@drawable/close" />
+
+
+</RelativeLayout>
